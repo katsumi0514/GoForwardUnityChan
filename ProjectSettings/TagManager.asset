@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DamageObject
+  - Cube
+  - Ground
   layers:
   - Default
   - TransparentFX

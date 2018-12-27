@@ -32,9 +32,8 @@ public class CubeController : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D other){
-		string layerName = LayerMask.LayerToName (other.gameObject.layer);
-
-		if (layerName == "Cube"  || layerName == "Ground") {
+		
+		if (other.gameObject.tag== "Cube"  || other.gameObject.tag == "Ground") {
 			audioSource.PlayOneShot (impact, 0.7F);
 		}
 	
